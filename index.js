@@ -45,7 +45,6 @@ class dataoke {
   /**请求大淘客获得数据
    * @param api 请求接口 如："tb-service/activity-link"
    * @param options 除公共参数以外的其他参数
-   * @return string
    */
   request(api, options) {
     let data = {

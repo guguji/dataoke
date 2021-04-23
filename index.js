@@ -1,6 +1,5 @@
 const axios = require('axios');
 const crypto = require('crypto');
-const md5 = crypto.createHash('md5');
 
 class dataoke {
 
@@ -37,6 +36,7 @@ class dataoke {
     }
 
     // md5加密
+    const md5 = crypto.createHash('md5');
     const ret = md5.update(`${str}&key=${this.appSecret}`).digest('hex');
 
     return ret;
